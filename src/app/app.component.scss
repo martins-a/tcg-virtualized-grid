@@ -1,0 +1,30 @@
+.grid-row {
+  margin-bottom: 10px;
+}
+
+virtual-scroller {
+  background: linear-gradient(#555, #bdbdbd);;
+  width: 1000px;
+  height: 1200px;
+  box-shadow: 3px 4px 20px 15px #929292;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: black;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: rgb(199, 43, 43);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgb(149, 4, 4);
+    }
+}

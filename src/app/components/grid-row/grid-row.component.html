@@ -1,0 +1,24 @@
+<div class="container main">
+  <div class="row">
+    <!-- <div class="col">
+      <app-grid-card></app-grid-card>
+    </div>
+    <div class="col">
+      <app-grid-card></app-grid-card>
+    </div>
+    <div class="col">
+      <app-grid-card></app-grid-card>
+    </div>
+    <div class="col">
+      <app-grid-card></app-grid-card>
+    </div>
+    <div class="col">
+      <app-grid-card></app-grid-card>
+    </div> -->
+    <ng-container *ngIf="cards && cards.length > 0">
+      <div class="card-row" *ngFor="let card of cards">
+        <app-grid-card [imageUrl]="card.imageUrl" [title]="card.name"></app-grid-card>
+      </div>
+    </ng-container>
+  </div>
+</div>

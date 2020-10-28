@@ -1,0 +1,23 @@
+.card {
+  height: 275px;
+  width: 180px;
+  margin-left: 5px;
+
+  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+
+    background-color: black;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+}

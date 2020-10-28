@@ -1,0 +1,10 @@
+
+<div class="container p-3">
+
+  <h2 style="color: rgb(165, 0, 0); font-weight: bold;">Pokemon TCG - Virtualized Grid</h2><br>
+  <ng-container *ngIf="cardRows && cardRows.length > 0">
+    <virtual-scroller #scroll [items]="cardRows">
+      <app-grid-row *ngFor="let item of scroll.viewPortItems" [cards]="item"></app-grid-row>
+    </virtual-scroller>
+  </ng-container>
+</div>
